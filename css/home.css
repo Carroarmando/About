@@ -85,3 +85,15 @@ a {
     border-radius: 8px;
     cursor: pointer;
 }
+
+#card-progetti-totali .subproject {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+  
+#card-progetti-totali .subproject:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
