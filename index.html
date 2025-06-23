@@ -7,6 +7,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" type="text/css" href="css/home.css">
+  <style>
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .card-link .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+  </style>
 </head>
 
 <body>
@@ -17,79 +30,103 @@
   </header>
 
   <nav>
-    <a id="navMaterie" href="#materie">Materie</a>
-    <a id="navHobby" href="#hobby">Hobby</a>
-    <a id="navPcto" href="#pcto">PCTO</a>
-    <a id="navProgetti" href="#progetti">Progetti</a>
-    <a id="navContatti" href="#contatti">Contatti</a>
+    <a href="materie_informatica.html">Informatica</a>
+    <a href="materie_sistemi.html">Sistemi e Reti</a>
+    <a href="hobby.html">Hobby</a>
+    <a href="skills.html">Competenze</a>
+    <a href="pcto.html">PCTO</a>
+    <a href="progetto_scacchi.html">Scacchi</a>
+    <a href="progetto_pvsz.html">Plant vs Zombie</a>
+    <a href="progetto_gestionale.html">Gestionale Scout</a>
+    <a href="progetto_hackathon.html">Hackathon</a>
   </nav>
 
   <div class="lang-switcher">
     <button onclick="switchLanguage()">🌐 English / Italiano</button>
   </div>
 
-  <section onclick="location.href='materie.html'">
-    <h2 id="sectionMaterie">📚 Materie Scolastiche</h2>
-    <div class="card">
-      <h3>Informatica</h3>
-      <p id="infotxt">Ho imparato linguaggi per sviluppo web, HTML, CSS, PHP, JS e MySQL e per sviluppo app, C, C#, Java, Python, assembly. Ho realizzato gestionali, simulazioni web e giochi.</p>
-    </div>
-    <div class="card">
-      <h3>Sistemi e reti</h3>
-      <p id="sistemitxt">Ho imparato a configurare reti, gestirne le comunicazioni con e senza NAT, a configurare server web, DHCP, FTP, posta e DNS.</p>
-    </div>
+  <section id="materie">
+    <h2>📚 Materie Scolastiche</h2>
+    <a href="materie_informatica.html" class="card-link">
+      <div class="card">
+        <h3>Informatica</h3>
+        <p>Ho imparato linguaggi per sviluppo web, HTML, CSS, PHP, JS e MySQL e per sviluppo app, C, C#, Java, Python, assembly. Ho realizzato gestionali, simulazioni web e giochi.</p>
+      </div>
+    </a>
+    <a href="materie_sistemi.html" class="card-link">
+      <div class="card">
+        <h3>Sistemi e reti</h3>
+        <p>Ho imparato a configurare reti, gestirne le comunicazioni con e senza NAT, a configurare server web, DHCP, FTP, posta e DNS.</p>
+      </div>
+    </a>
   </section>
 
   <section id="hobby">
-    <h2 id="sectionHobby">🎯 Hobby e Competenze</h2>
-    <div class="card">
-      <h3>Hobby</h3>
-      <ul>
-        <li id="bike">Andare in bici</li>
-        <li id="basket">Basket</li>
-        <li id="anime">Anime e manga</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Hard skills</h3>
-      <p>HTML, CSS, PHP, JS, Git, database, C, C#, Java, Python, assembly.</p>
-    </div>
-    <div class="card">
-      <h3>Soft skills</h3>
-      <p id="skills">Problem solving, lavoro in team, comunicazione, adattabilità.</p>
-    </div>
+    <h2>🎯 Hobby e Competenze</h2>
+    <a href="hobby.html" class="card-link">
+      <div class="card">
+        <h3>Hobby</h3>
+        <ul>
+          <li>Andare in bici</li>
+          <li>Basket</li>
+          <li>Anime e manga</li>
+        </ul>
+      </div>
+    </a>
+    <a href="skills.html" class="card-link">
+      <div class="card">
+        <h3>Hard skills</h3>
+        <p>HTML, CSS, PHP, JS, Git, database, C, C#, Java, Python, assembly.</p>
+      </div>
+    </a>
+    <a href="skills.html" class="card-link">
+      <div class="card">
+        <h3>Soft skills</h3>
+        <p>Problem solving, lavoro in team, comunicazione, adattabilità.</p>
+      </div>
+    </a>
   </section>
 
   <section id="pcto">
-    <h2 id="sectionPcto">🧪 PCTO</h2>
-    <div class="card">
-      <h3 id="pctotitle">PCTO presso APRA (Jesi)</h3>
-      <p id="pctotxt">Attività di sviluppo web, test, debugging e collaborazione in team.</p>
-    </div>
+    <h2>🧪 PCTO</h2>
+    <a href="pcto.html" class="card-link">
+      <div class="card">
+        <h3>PCTO presso APRA (Jesi)</h3>
+        <p>Attività di sviluppo web, test, debugging e collaborazione in team.</p>
+      </div>
+    </a>
   </section>
 
   <section id="progetti">
-    <h2 id="sectionProgetti">💼 Progetti</h2>
-    <div class="card">
-      <h3 id="proj3title">Terzo anno</h3>
-      <p id="proj3">Scacchi - 2D in C#, grafica fatta con la libreria SFML. Focus sulla funzionalità.</p>
-    </div>
-    <div class="card">
-      <h3 id="proj4title">Quarto anno</h3>
-      <p id="proj4">Plant vs Zombie – Clone 2D sviluppato in C# con logica di spawn, gestione HP e animazioni. Focus sul game loop.</p>
-    </div>
-    <div class="card">
-      <h3 id="proj5title">Quinto anno</h3>
-      <p id="proj5">Gestionale scout - applicazione web sviluppata in gruppo con la classe, con backend in PHP e MySQL.</p>
-    </div>
-    <div class="card">
-      <h3 id="projhacktitle">Hackathon 2025 (quinto anno)</h3>
-      <p id="projHack">Team da 6, progetto di un'app web per agevolare e incentivare le comunicazioni tra scuole, studenti (superiori e universitari), diplomati e aziende per esperienze di PCTO, tirocinio e cercare lavoro. Backend in PHP/MySQL e frontend con HTML/CSS/JS.</p>
-    </div>
+    <h2>💼 Progetti</h2>
+    <a href="progetto_scacchi.html" class="card-link">
+      <div class="card">
+        <h3>Terzo anno</h3>
+        <p>Scacchi - 2D in C#, grafica fatta con la libreria SFML. Focus sulla funzionalità.</p>
+      </div>
+    </a>
+    <a href="progetto_pvsz.html" class="card-link">
+      <div class="card">
+        <h3>Quarto anno</h3>
+        <p>Plant vs Zombie – Clone 2D sviluppato in C# con logica di spawn, gestione HP e animazioni. Focus sul game loop.</p>
+      </div>
+    </a>
+    <a href="progetto_gestionale.html" class="card-link">
+      <div class="card">
+        <h3>Quinto anno</h3>
+        <p>Gestionale scout - applicazione web sviluppata in gruppo con la classe, con backend in PHP e MySQL.</p>
+      </div>
+    </a>
+    <a href="progetto_hackathon.html" class="card-link">
+      <div class="card">
+        <h3>Hackathon 2025 (quinto anno)</h3>
+        <p>Team da 6, progetto di un'app web per agevolare e incentivare le comunicazioni tra scuole, studenti (superiori e universitari), diplomati e aziende per esperienze di PCTO, tirocinio e cercare lavoro. Backend in PHP/MySQL e frontend con HTML/CSS/JS.</p>
+      </div>
+    </a>
   </section>
 
   <section id="contatti">
-    <h2 id="sectionContatti">📞 Contatti</h2>
+    <h2>📞 Contatti</h2>
     <div class="card">
       <p><strong>Riccardo</strong></p>
       <p>Email: ilaririccardo007@gmail.com</p>
@@ -99,7 +136,7 @@
   </section>
 
   <footer>
-    <p id="diricts">&copy; 2025 Riccardo Portfolio - Tutti i diritti riservati</p>
+    <p>&copy; 2025 Riccardo Portfolio - Tutti i diritti riservati</p>
   </footer>
 
   <script src="switch.js"></script>
