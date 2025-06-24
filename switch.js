@@ -1,4 +1,5 @@
-let isEnglish = false;
+let isEnglish = true;
+switchLanguage();
 
 function switchLanguage() {
     isEnglish = !isEnglish;
