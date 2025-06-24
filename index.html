@@ -3,122 +3,158 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title id="title">Portfolio di Riccardo</title>
+  <title>Portfolio di Riccardo</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" type="text/css" href="css/home.css">
+  <link rel="stylesheet" type="text/css" href="../css/home.css">
+  <style>
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .card-link .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+  </style>
 </head>
+
 <body>
+
   <header>
-    <h1 id="title">Portfolio di Riccardo</h1>
-    <p id="subtitle">Il mio viaggio tra studio, progetti e passioni</p>
+    <h1 id="titolo">Portfolio di Riccardo</h1>
+    <p id="sottotitolo">Il mio viaggio tra studio, progetti e passioni</p>
   </header>
 
   <nav>
+  
     <div class="dropdown">
-      <button class="dropbtn" id="navMaterie">Materie ▾</button>
+      <button class="dropbtn" id="nav_materie">Materie ▾</button>
       <div class="dropdown-content">
-        <a href="progetto_3.html" id="proj3title">Progetto 3° anno</a>
-        <a href="progetto_4.html" id="proj4title">Progetto 4° anno</a>
-        <a href="progetto_5.html" id="proj5title">Progetto 5° anno</a>
-        <a href="hackathon.html" id="projhacktitle">Hackathon 2025</a>
+        <a href="progetto_3.html" id="nav_info">Informatica</a>
+        <a href="progetto_5.html" id="nav_ia">Intelligenza artificiale</a>
+        <a href="progetto_4.html" id="nav_sis">Sistemi e reti</a>
+        <a href="progetto_5.html" id="nav_tpsit">Tpsit</a>
+        <a href="progetto_5.html" id="nav_ita">Italiano</a>
+        <a href="progetto_5.html" id="nav_storia">Storia</a>
+        <a href="progetto_5.html" id="nav_ing">Inglese</a>
+        <a href="progetto_5.html" id="nav_mate">Matematica</a>
       </div>
     </div>
-    <a href="hobby.html" id="navHobby">Hobby</a>
-    <a href="pcto.html" id="navPcto">PCTO</a>
+  
+    <a href="hobby.html" id="nav_hobby">Hobby</a>
+    <a href="pcto.html" id="nav_pcto">PCTO</a>
+  
     <div class="dropdown">
-      <button class="dropbtn" id="navProgetti">Progetti ▾</button>
+      <button class="dropbtn" id="nav_progetti">Progetti ▾</button>
       <div class="dropdown-content">
-        <a href="progetto_3.html">Progetto 3° anno</a>
-        <a href="progetto_4.html">Progetto 4° anno</a>
-        <a href="progetto_5.html">Progetto 5° anno</a>
+        <a href="progetto_3.html" id="nav_3">Progetto 3° anno</a>
+        <a href="progetto_4.html" id="nav_4">Progetto 4° anno</a>
+        <a href="progetto_5.html" id="nav_5">Progetto 5° anno</a>
         <a href="hackathon.html">Hackathon 2025</a>
       </div>
     </div>
-    <a href="contatti.html" id="navContatti">Contatti</a>
+  
+    <a href="contatti.html" id="nav_contatti">Contatti</a>
   </nav>
 
   <div class="lang-switcher">
     <button onclick="switchLanguage()">🌐 English / Italiano</button>
   </div>
 
-  <section id="sectionMaterie">
-    <h2>📚 <span id="sectionMaterie">Materie Scolastiche</span></h2>
-    <a href="materie_informatica.html" class="card-link">
+  <section id="materie">
+    <h2 id="materie_titolo">📚 Materie Scolastiche</h2>
+    <a href="materie.html" class="card-link">
       <div class="card">
         <h3>Informatica</h3>
-        <p id="infotxt"></p>
+        <p>Ho imparato linguaggi per sviluppo web, HTML, CSS, PHP, JS e MySQL e per sviluppo app, C, C#, Java, Python, assembly. Ho realizzato gestionali, simulazioni web e giochi.</p>
       </div>
     </a>
-    <a href="materie_sistemi.html" class="card-link">
+    <a href="materie.html" class="card-link">
       <div class="card">
         <h3>Sistemi e reti</h3>
-        <p id="sistemitxt"></p>
+        <p>Ho imparato a configurare reti, gestirne le comunicazioni con e senza NAT, a configurare server web, DHCP, FTP, posta e DNS.</p>
       </div>
     </a>
   </section>
 
-  <section id="sectionHobby">
-    <h2>🎯 <span id="sectionHobby">Hobby e Competenze</span></h2>
-    <div class="card">
-      <h3>Hobby</h3>
-      <ul>
-        <li id="bike"></li>
-        <li id="basket"></li>
-        <li id="anime"></li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Soft skills</h3>
-      <p id="skills"></p>
+  <section id="hobby">
+    <h2>🎯 Hobby e Competenze</h2>
+    <a href="hobby.html" class="card-link">
+      <div class="card">
+        <h3>Hobby</h3>
+        <ul>
+          <li>Andare in bici</li>
+          <li>Basket</li>
+          <li>Anime e manga</li>
+        </ul>
+      </div>
+    </a>
+    <a href="skills.html" class="card-link">
+      <div class="card">
+        <h3>Hard skills</h3>
+        <p>HTML, CSS, PHP, JS, Git, database, C, C#, Java, Python, assembly.</p>
+      </div>
+    </a>
+    <a href="skills.html" class="card-link">
+      <div class="card">
+        <h3>Soft skills</h3>
+        <p>Problem solving, lavoro in team, comunicazione, adattabilità.</p>
+      </div>
+    </a>
+  </section>
+
+  <section id="pcto">
+    <h2>🧪 PCTO</h2>
+    <a href="pcto.html" class="card-link">
+      <div class="card">
+        <h3>PCTO presso APRA (Jesi)</h3>
+        <p>Attività di sviluppo web, test, debugging e collaborazione in team.</p>
+      </div>
+    </a>
+  </section>
+
+  <section id="progetti">
+    <h2 id="sectionProgetti">💼 Progetti</h2>
+    <div class="card" id="card-progetti-totali">
+      <h3>Progetti</h3>
+      <div class="subproject">
+        <h4 id="proj3title">Terzo anno</h4>
+        <p id="proj3">Scacchi - 2D in C#, grafica fatta con la libreria SFML. Focus sulla funzionalità.</p>
+      </div>
+      <div class="subproject">
+        <h4 id="proj4title">Quarto anno</h4>
+        <p id="proj4">Plant vs Zombie – Clone 2D sviluppato in C# con logica di spawn, gestione HP e animazioni. Focus sul game loop.</p>
+      </div>
+      <div class="subproject">
+        <h4 id="proj5title">Quinto anno</h4>
+        <p id="proj5">Gestionale scout - applicazione web sviluppata in gruppo con la classe, con backend in PHP e MySQL.</p>
+      </div>
+      <div class="subproject">
+        <h4 id="projhacktitle">Hackathon 2025 (quinto anno)</h4>
+        <p id="projHack">Team da 6, progetto di un'app web per agevolare e incentivare le comunicazioni tra scuole, studenti (superiori e universitari), diplomati e aziende per esperienze di PCTO, tirocinio e cercare lavoro. Backend in PHP/MySQL e frontend con HTML/CSS/JS.</p>
+      </div>
     </div>
   </section>
 
-  <section id="sectionPcto">
-    <h2>🧪 <span id="sectionPcto">PCTO</span></h2>
-    <div class="card">
-      <h3 id="pctotitle"></h3>
-      <p id="pctotxt"></p>
-    </div>
-  </section>
-
-  <section id="sectionProgetti">
-    <h2>💼 <span id="sectionProgetti">Progetti</span></h2>
-    <div class="card">
-      <div class="subproject">
-        <h4 id="proj3title"></h4>
-        <p id="proj3"></p>
-      </div>
-      <div class="subproject">
-        <h4 id="proj4title"></h4>
-        <p id="proj4"></p>
-      </div>
-      <div class="subproject">
-        <h4 id="proj5title"></h4>
-        <p id="proj5"></p>
-      </div>
-      <div class="subproject">
-        <h4 id="projhacktitle"></h4>
-        <p id="projHack"></p>
-      </div>
-    </div>
-  </section>
-
-  <section id="sectionContatti">
-    <h2>📞 <span id="sectionContatti">Contatti</span></h2>
+  <section id="contatti">
+    <h2>📞 Contatti</h2>
     <div class="card">
       <p><strong>Riccardo</strong></p>
       <p>Email: ilaririccardo007@gmail.com</p>
       <p>GitHub: <a href="https://github.com/Carroarmando" target="_blank">github.com/Carroarmando</a></p>
+      <p><a href="../Curriculum.pdf" download><i class="fa-solid fa-download"></i>Scarica il mio CV</a></p>
     </div>
   </section>
 
   <footer>
-    <p id="diricts">&copy; 2025 Riccardo Portfolio - Tutti i diritti riservati</p>
+    <p>&copy; 2025 Riccardo Portfolio - Tutti i diritti riservati</p>
   </footer>
 
-  <script>
-    
-  </script>
+  <script src="switch.js"></script>
+
 </body>
 </html>

@@ -3,13 +3,30 @@ function switchLanguage() {
     isEnglish = !isEnglish;
     const t = {
         it: {
-            title: "Portfolio di Riccardo",
-            subtitle: "Il mio viaggio tra studio, progetti e passioni",
-            navMaterie: "Materie ▾",
-            navHobby: "Hobby",
-            navPcto: "PCTO",
-            navProgetti: "Progetti ▾",
-            navContatti: "Contatti",
+            titolo: "Portfolio di Riccardo",
+            sottotitolo: "Il mio viaggio tra studio, progetti e passioni",
+            nav_materie: "Materie ▾",
+            nav_info: "Informatica",
+            nav_ia: "Intelligenza artificiale",
+            nav_sis: "Sistemi e reti",
+            nav_tpsit: "Tpsit",
+            nav_ita: "Italiano",
+            nav_storia: "Storia",
+            nav_ing: "Inglese",
+            nav_mate: "Matematica",
+            nav_hobby: "Hobby",
+            nav_pcto: "PCTO",
+            nav_progetti: "Progetti ▾",
+            nav_3: "Progetto 3° anno",
+            nav_4: "Progetto 4° anno",
+            nav_5: "Progetto 5° anno",
+            nav_contatti: "Contatti",
+            materie_titolo: "Materie",
+            info_titolo: "Informatica",
+            ia_titolo: "Intelligenza artificiale",
+            sis_titolo: "Sistemi e reti",
+            tpsit_titolo: "Tpsit",
+
             infotxt: "Ho imparato linguaggi per sviluppo web, HTML, CSS, PHP, JS e MySQL e per sviluppo app, C, C#, Java, Python, assembly. Ho realizzato gestionali, simulazioni web e giochi.",
             sistemitxt: "Ho imparato a configurare reti, gestirne le comunicazioni con e senza NAT, a configurare server web, DHCP, FTP, posta e DNS.",
             bike: "Andare in bici",
@@ -29,13 +46,30 @@ function switchLanguage() {
             diricts: "&copy; 2025 Riccardo Portfolio - Tutti i diritti riservati"
         },
         en: {
-            title: "Riccardo's Portfolio",
-            subtitle: "My journey through study, projects and passions",
-            navMaterie: "Subjects ▾",
-            navHobby: "Hobbies",
-            navPcto: "Internship",
-            navProgetti: "Projects ▾",
-            navContatti: "Contacts",
+            titolo: "Riccardo's Portfolio",
+            sottotitolo: "My journey through study, projects and passions",
+            nav_materie: "Subjects ▾",
+            nav_info: "Computer science",
+            nav_ia: "Artificial intelligence",
+            nav_sis: "Systems and networks",
+            nav_tpsit: "Tpsit",
+            nav_ita: "Italian",
+            nav_storia: "History",
+            nav_ing: "English",
+            nav_mate: "Mathematics",
+            nav_hobby: "Hobbies",
+            nav_pcto: "Internship",
+            nav_progetti: "Projects ▾",
+            nav_3: "Project 3rd year",
+            nav_4: "Project 4th year",
+            nav_5: "Project 5th year",
+            nav_contatti: "Contacts",
+            materie_titolo: "Subjects",
+            info_titolo: "Computer science",
+            ia_titolo: "Artificial intelligence",
+            sis_titolo: "Systems and networks",
+            tpsit_titolo: "Tpsit",
+
             infotxt: "I learned web dev languages like HTML, CSS, PHP, JS, MySQL and app dev ones like C, C#, Java, Python, and assembly. I built management apps, simulations, and games.",
             sistemitxt: "I learned to configure networks, manage communications with/without NAT, and set up web, DHCP, FTP, mail, and DNS servers.",
             bike: "Cycling",
@@ -58,7 +92,7 @@ function switchLanguage() {
 
     const lang = isEnglish ? t.en : t.it;
     for (let id in lang) {
-    const el = document.getElementById(id);
-    if (el) el.innerHTML = lang[id];
+        const el = document.getElementById(id);
+        if (el) el.innerHTML = lang[id];
     }
 }
