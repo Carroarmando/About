@@ -10,8 +10,41 @@
 </head>
 
 <body>
-  <div include-html="header.html"></div>
-  <div include-html="nav.html"></div>
+  <header>
+    <h1 id="titolo">Portfolio di Riccardo</h1>
+    <p id="sottotitolo">Il mio viaggio tra studio, progetti e passioni</p>
+  </header>
+  <nav>
+  
+    <div class="dropdown">
+      <button class="dropbtn" id="nav_materie">Materie ▾</button>
+      <div class="dropdown-content">
+        <a href="progetto_3.html" id="nav_info">Informatica</a>
+        <a href="progetto_5.html" id="nav_ia">Intelligenza artificiale</a>
+        <a href="progetto_4.html" id="nav_sis">Sistemi e reti</a>
+        <a href="progetto_5.html" id="nav_tpsit">Tpsit</a>
+        <a href="progetto_5.html" id="nav_ita">Italiano</a>
+        <a href="progetto_5.html" id="nav_storia">Storia</a>
+        <a href="progetto_5.html" id="nav_ing">Inglese</a>
+        <a href="progetto_5.html" id="nav_mate">Matematica</a>
+      </div>
+    </div>
+  
+    <a href="hobby.html" id="nav_hobby">Hobby</a>
+    <a href="pcto.html" id="nav_pcto">PCTO</a>
+  
+    <div class="dropdown">
+      <button class="dropbtn" id="nav_progetti">Progetti ▾</button>
+      <div class="dropdown-content">
+        <a href="progetto_3.html" id="nav_3">Progetto 3° anno</a>
+        <a href="progetto_4.html" id="nav_4">Progetto 4° anno</a>
+        <a href="progetto_5.html" id="nav_5">Progetto 5° anno</a>
+        <a href="hackathon.html">Hackathon 2025</a>
+      </div>
+    </div>
+  
+    <a href="contatti.html" id="nav_contatti">Contatti</a>
+  </nav>
 
   <div class="lang-switcher">
     <button onclick="switchLanguage()">🌐 English / Italiano</button>
