@@ -6,6 +6,7 @@ function switchLanguage() {
 
     const t = {
         it: {
+            titolo: "Portfolio di Riccardo",
             materie_titolo: "Materie Scolastiche",
             info_titolo: "Informatica",
             nav_materie: "Materie ▾",
@@ -61,6 +62,7 @@ function switchLanguage() {
             diricts: "&copy; 2025 Riccardo Portfolio - Tutti i diritti riservati"
         },
         en: {
+            titolo: "Riccardo's portfolio",
             materie_titolo: "School Subjects",
             info_titolo: "Computer Science",
             nav_materie: "School Subjects ▾",
