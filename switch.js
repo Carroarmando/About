@@ -88,7 +88,7 @@ function switchLanguage() {
             mate_titolo: "Mathematics",
             info_text: "I learned web dev languages like HTML, CSS, PHP, JS, MySQL and app dev ones like C, C#, Java, Python, and assembly. I built management apps, simulations, and games.",
             ia_text: "I studied base concepts of artificial intelligence, like machine learning and neural networks. I applied these concepts in practical projects.",
-            sistemi_text: "I learned to configure networks, manage communications with/without NAT, and set up web, DHCP, FTP, mail, and DNS servers.",
+            sis_text: "I learned to configure networks, manage communications with/without NAT, and set up web, DHCP, FTP, mail, and DNS servers.",
             tpsit: "I further developed the design of software passing to android, and using Java I created some simple applications.",
             ita: "I developed the ability to analyze and produce text, and studied authors and literary movements.",
             storia: "I studied modern and contemporary historical events, mainly the World Wars.",
