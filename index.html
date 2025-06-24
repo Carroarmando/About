@@ -23,43 +23,8 @@
 </head>
 
 <body>
-
-  <header>
-    <h1 id="titolo">Portfolio di Riccardo</h1>
-    <p id="sottotitolo">Il mio viaggio tra studio, progetti e passioni</p>
-  </header>
-
-  <nav>
-  
-    <div class="dropdown">
-      <button class="dropbtn" id="nav_materie">Materie ▾</button>
-      <div class="dropdown-content">
-        <a href="progetto_3.html" id="nav_info">Informatica</a>
-        <a href="progetto_5.html" id="nav_ia">Intelligenza artificiale</a>
-        <a href="progetto_4.html" id="nav_sis">Sistemi e reti</a>
-        <a href="progetto_5.html" id="nav_tpsit">Tpsit</a>
-        <a href="progetto_5.html" id="nav_ita">Italiano</a>
-        <a href="progetto_5.html" id="nav_storia">Storia</a>
-        <a href="progetto_5.html" id="nav_ing">Inglese</a>
-        <a href="progetto_5.html" id="nav_mate">Matematica</a>
-      </div>
-    </div>
-  
-    <a href="hobby.html" id="nav_hobby">Hobby</a>
-    <a href="pcto.html" id="nav_pcto">PCTO</a>
-  
-    <div class="dropdown">
-      <button class="dropbtn" id="nav_progetti">Progetti ▾</button>
-      <div class="dropdown-content">
-        <a href="progetto_3.html" id="nav_3">Progetto 3° anno</a>
-        <a href="progetto_4.html" id="nav_4">Progetto 4° anno</a>
-        <a href="progetto_5.html" id="nav_5">Progetto 5° anno</a>
-        <a href="hackathon.html">Hackathon 2025</a>
-      </div>
-    </div>
-  
-    <a href="contatti.html" id="nav_contatti">Contatti</a>
-  </nav>
+  <div include-html="header.html"></div>
+  <div include-html="nav.html"></div>
 
   <div class="lang-switcher">
     <button onclick="switchLanguage()">🌐 English / Italiano</button>
@@ -67,49 +32,49 @@
 
   <section id="materie">
     <h2 id="materie_titolo">Materie Scolastiche</h2>
-    <a href="materie.html" class="card-link">
+    <a href="materie.html#info" class="card-link">
         <div class="card">
           <h3 id="info_titolo">Informatica</h3>
           <p id="info_text">Ho imparato linguaggi per sviluppo web, HTML, CSS, PHP, JS e MySQL e per sviluppo app, C, C#, Java, Python, assembly. Ho realizzato gestionali, simulazioni web e giochi.</p>
         </div>
     </a>
-    <a href="materie.html" class="card-link">
+    <a href="materie.html#ia" class="card-link">
         <div class="card">
           <h3 id="ia_titolo">Intelligenza artificiale</h3>
           <p id="ia_text">Ho studiato concetti base di intelligenza artificiale, come machine learning e reti neurali. Ho applicato questi concetti in progetti pratici.</p>
         </div>
     </a>
-    <a href="materie.html" class="card-link">
+    <a href="materie.html#sis" class="card-link">
         <div class="card">
           <h3 id="sis_titolo">Sistemi e reti</h3>
           <p id="sis_text">Ho imparato linguaggi per sviluppo web, HTML, CSS, PHP, JS e MySQL e per sviluppo app, C, C#, Java, Python, assembly. Ho realizzato gestionali, simulazioni web e giochi.</p>
         </div>
     </a>
-    <a href="materie.html" class="card-link">
+    <a href="materie.html#tpsit" class="card-link">
         <div class="card">
           <h3 id="tpsit_titolo">Tpsit</h3>
           <p id="tpsit_text">Ho approfondito la progettazione del software passando ad android, e usando il Java ho creato delle prime semplici applicazioni.</p>
         </div>
     </a>
-    <a href="materie.html" class="card-link">
+    <a href="materie.html#ita" class="card-link">
         <div class="card">
           <h3 id="ita_titolo">Italiano</h3>
           <p id="ita_text">Ho sviluppato capacità di analisi e produzione testuale e studiato autori e movimenti letterari.</p>
         </div>
     </a>
-    <a href="materie.html" class="card-link">
+    <a href="materie.html#storia" class="card-link">
         <div class="card">
           <h3 id="storia_titolo">Storia</h3>
           <p id="storia_text">Studio di eventi storici moderni e contemporanei, principalmente guerre mondiali.</p>
         </div>
     </a>
-    <a href="materie.html" class="card-link">
+    <a href="materie.html#ing" class="card-link">
         <div class="card">
           <h3 id="ing_titolo">Inglese</h3>
           <p id="ing_text">Miglioramento della comprensione e produzione scritta e orale.</p>
         </div>
     </a>
-    <a href="materie.html" class="card-link">
+    <a href="materie.html#mate" class="card-link">
         <div class="card">
           <h3 id="mate_titolo">Matematica</h3>
           <p id="mate_text">Studio di algebra, funzioni, limiti, derivate, integrali, probabilità e statistica.</p>
@@ -119,7 +84,7 @@
 
   <section id="hobby">
     <h2 id="hobby_competenze_titolo">Hobby e Competenze</h2>
-    <a href="hobby.html" class="card-link">
+    <a href="hobby.html#hobby" class="card-link">
       <div class="card">
         <h3 id="hobby_titolo">Hobby</h3>
         <ul id="hobby_text">
@@ -129,13 +94,13 @@
         </ul>
       </div>
     </a>
-    <a href="skills.html" class="card-link">
+    <a href="hobby.html#hard" class="card-link">
       <div class="card">
         <h3>Hard skills</h3>
         <p id="hard_skills_text">HTML, CSS, PHP, JS, Git, database, C, C#, Java, Python, assembly.</p>
       </div>
     </a>
-    <a href="skills.html" class="card-link">
+    <a href="hobby.html#soft" class="card-link">
       <div class="card">
         <h3>Soft skills</h3>
         <p id="soft_skills_text">Problem solving, lavoro in team, comunicazione, adattabilità.</p>
@@ -157,22 +122,30 @@
     <h2 id="section_progetti">Progetti</h2>
     <div class="card" id="card-progetti-totali">
       <h3>Progetti</h3>
-      <div class="subproject">
-        <h4 id="proj3_titolo">Terzo anno</h4>
-        <p id="proj3_text">Scacchi - 2D in C#, grafica fatta con la libreria SFML. Focus sulla funzionalità.</p>
-      </div>
-      <div class="subproject">
-        <h4 id="proj4_titolo">Quarto anno</h4>
-        <p id="proj4_text">Plant vs Zombie – Clone 2D sviluppato in C# con logica di spawn, gestione HP e animazioni. Focus sul game loop.</p>
-      </div>
-      <div class="subproject">
-        <h4 id="proj5_titolo">Quinto anno</h4>
-        <p id="proj5_text">Gestionale scout - applicazione web sviluppata in gruppo con la classe, con backend in PHP e MySQL.</p>
-      </div>
-      <div class="subproject">
-        <h4 id="projhack_titolo">Hackathon 2025 (quinto anno)</h4>
-        <p id="projhack_text">Team da 6, progetto di un'app web per agevolare e incentivare le comunicazioni tra scuole, studenti (superiori e universitari), diplomati e aziende per esperienze di PCTO, tirocinio e cercare lavoro. Backend in PHP/MySQL e frontend con HTML/CSS/JS.</p>
-      </div>
+      <a href="progetti.html#3" class="card-link">
+        <div class="subproject">
+          <h4 id="proj3_titolo">Terzo anno</h4>
+          <p id="proj3_text">Scacchi - 2D in C#, grafica fatta con la libreria SFML. Focus sulla funzionalità.</p>
+        </div>
+      </a>
+      <a href="progetti.html#4" class="card-link">
+        <div class="subproject">
+          <h4 id="proj4_titolo">Quarto anno</h4>
+          <p id="proj4_text">Plant vs Zombie – Clone 2D sviluppato in C# con logica di spawn, gestione HP e animazioni. Focus sul game loop.</p>
+        </div>
+      </a>
+      <a href="progetti.html#5" class="card-link">
+        <div class="subproject">
+          <h4 id="proj5_titolo">Quinto anno</h4>
+          <p id="proj5_text">Gestionale scout - applicazione web sviluppata in gruppo con la classe, con backend in PHP e MySQL.</p>
+        </div>
+      </a>
+      <a href="progetti.html#hack" class="card-link">
+        <div class="subproject">
+          <h4 id="projhack_titolo">Hackathon 2025 (quinto anno)</h4>
+          <p id="projhack_text">Team da 6, progetto di un'app web per agevolare e incentivare le comunicazioni tra scuole, studenti (superiori e universitari), diplomati e aziende per esperienze di PCTO, tirocinio e cercare lavoro. Backend in PHP/MySQL e frontend con HTML/CSS/JS.</p>
+        </div>
+      </a>
     </div>
   </section>
 
@@ -186,9 +159,7 @@
     </div>
   </section>
 
-  <footer>
-    <p id="diricts">&copy; 2025 Riccardo Portfolio - Tutti i diritti riservati</p>
-  </footer>
+  <div include-html="footer.html"></div>
 
   <script src="switch.js"></script>
 
