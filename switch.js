@@ -58,7 +58,7 @@ function switchLanguage() {
             projhack_titolo: "Hackathon 2025 (quinto anno)",
             projhack_text: "Team da 6, progetto di un'app web per agevolare e incentivare le comunicazioni tra scuole, studenti (superiori e universitari), diplomati e aziende per esperienze di PCTO, tirocinio e cercare lavoro. Backend in PHP/MySQL e frontend con HTML/CSS/JS.",
             contatti_titolo: "📞 Contatti",
-            cv: "<i class=\"fa-solid fa-download\"></i>Scarica il mio CV",
+            cv: "Scarica il mio CV",
             diricts: "&copy; 2025 Riccardo Portfolio - Tutti i diritti riservati"
         },
         en: {
@@ -114,7 +114,7 @@ function switchLanguage() {
             projhack_titolo: "Hackathon 2025 (fifth year)",
             projhack_text: "Team of 6, created a web app to connect schools, students, graduates and companies for internships and job opportunities.",
             contatti_titolo: "📞 Contact",
-            cv: "<i class=\"fa-solid fa-download\"></i>Download my CV",
+            cv: "Download my CV",
             diricts: "&copy; 2025 Riccardo Portfolio - All rights reserved"
         }
     };
