@@ -56,36 +56,6 @@ nav a:hover, .dropbtn:hover {
   border-radius: 8px;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #2a2a3b;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.4);
-  z-index: 1;
-  border-radius: 8px;
-}
-
-.dropdown-content a {
-  color: #f5f5f5;
-  padding: 0.75rem 1rem;
-  display: block;
-  text-decoration: none;
-}
-
-.dropdown-content a:hover {
-  background-color: #00bfff20;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
 section {
   padding: 3rem 1rem;
   max-width: 1200px;
@@ -110,7 +80,7 @@ h2 {
 .card-link .card:hover {
   transform: scale(1.02);
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
   cursor: pointer;
 }
 
